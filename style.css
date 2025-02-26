@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #2a82e9;
+    --font-color: #808080;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color: #1d1d1d;
+    color: white;
+}
+img {
+    width: 120%;
+}
+
+.img_1 {
+    color: white;
+    width: 4%;
+}
+
+.profile_desc{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+.edu_year {
+    color: var(--font-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem;
+}
+.item_campus{
+    font-size: 1.4rem;
+    color: var(--font-color);
+    font-weight: 400;
+}
+.container{
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #262626;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
+.profile_img {
+    max-width: 250px;
+}
+.profile_1 {
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_2{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clmap(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 768px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+
+/*Expertise*/
+.skill_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+/*Education*/
+.edu_item {
+    color: var(--font-color);
+    margin-top: 1rem;
+}
+
+/*Experience*/
+.exp_item{
+    color: var(--font-color);
+    margin-top: 1rem;
+}
+
+/*Interest*/
+.int_items{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.int_item{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--font-color);
+} 
+
+.contact_info{
+    
+}
